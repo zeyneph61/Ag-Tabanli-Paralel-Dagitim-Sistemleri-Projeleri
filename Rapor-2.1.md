@@ -1,4 +1,4 @@
-# 2.-Veritaban-Yedekleme-ve-Felaketten-Kurtarma-Plan-
+# 2. Veri tabanı Yedekleme ve Felaketten Kurtarma Planı
 
 Ağ Tabanlı Paralel Dağıtım Sistemleri dersi için yapılan 2. Veritabanı Yedekleme ve Felaketten Kurtarma Planı projesi
 
