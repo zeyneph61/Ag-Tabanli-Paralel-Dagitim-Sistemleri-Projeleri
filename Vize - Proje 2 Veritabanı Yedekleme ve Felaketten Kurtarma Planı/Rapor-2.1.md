@@ -4,13 +4,19 @@ Ağ Tabanlı Paralel Dağıtım Sistemleri dersi için yapılan 2. Veritabanı Y
 
 # BLM 4522 PROJE RAPORU 
 
-2. Veri tabanı Yedekleme ve Felaketten Kurtarma Planı
-
 Zeynep Hacısalihoğlu
 
 22290449
 
+## İçindekiler
 
+- [1. Giriş](#1-giriş)
+  - [1.1 Kullanılan Ortam](#11-kullanılan-ortam)
+  - [1.2 Veri Tabanı Kurulumu](#12-veri-tabanı-kurulumu)
+  - [1.3 Amaç ve Planlama](#13-amaç-ve-planlama)
+- [2. Tam Yedekleme (Full Backup)](#2-tam-yedekleme-full-backup)
+- [3. Fark Yedekleme (Differential Backup)](#3-fark-yedekleme-differential-backup)
+- [4. Transaction Log Yedekleme](#4-transaction-log-yedekleme)
 
 # 1.	Giriş
 Bu proje Microsoft SQL Server üzerinde Northwind örnek veri tabanı kullanılarak kapsamlı bir yedekleme ve felaketten kurtarma planının tasarlanması ve uygulanmasını konu almaktadır. Proje boyunca tam yedekleme, fark yedekleme ve transaction log yedekleme stratejileri ele alınmış; bu yedeklerin otomatize edilmesi ve felaket senaryolarında veri kurtarma süreçleri uygulamalı olarak gerçekleştirilmiştir.
