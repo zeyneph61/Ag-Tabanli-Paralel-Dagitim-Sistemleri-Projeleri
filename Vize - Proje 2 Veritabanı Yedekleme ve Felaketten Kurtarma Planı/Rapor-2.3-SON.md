@@ -27,7 +27,9 @@ Zeynep Hacısalihoğlu
   - [8.4 Job Adımları](#84-job-adımları)
   - [8.5 Recovery Model Doğrulama](#85-recovery-model-doğrulama)
   - [8.6 Yedekleme Geçmişi](#86-yedekleme-geçmişi)
-- [9. Sonuç](#9-sonuç)
+- [9. Point-in-Time Restore](#9-point-in-time-restore)
+- [10. Sonuç](#1-sonuç)
+
 
 
 # 1.	Giriş
@@ -61,6 +63,7 @@ Amaç: Bir felaket anında (sunucu çökmesi, yanlışlıkla silme, veri bozulma
 4. Otomatik ZamanlamaBunları => SQL Agent ile otomatik çalışmasını sağlamak
 5. Test aşaması => DB'yi silmek / veriyi bozmak
 6. Geri Yüklemeye çalışmak
+7. Point-in-Time Restore => Transaction Log kullanarak belirli bir ana geri dönmek
 
 
 ## 2. Tam Yedekleme (Full Backup)
