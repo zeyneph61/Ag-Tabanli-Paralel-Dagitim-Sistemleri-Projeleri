@@ -15,8 +15,6 @@ Zeynep Hacısalihoğlu
 
 Bu proje Microsoft SQL Server 2022 üzerinde çalışan Northwind veritabanı üzerinde kapsamlı bir güvenlik altyapısının tasarlanması ve uygulanmasını konu almaktadır.
 
-Veritabanı güvenliği; yetkisiz erişimin engellenmesi, hassas verinin korunması ve kullanıcı aktivitelerinin izlenmesi açısından kritik önem taşımaktadır.
-
 Proje kapsamında dört temel güvenlik konusu ele alınmıştır: kullanıcı erişim yönetimi, veri şifreleme (TDE), SQL Injection saldırılarına karşı koruma ve audit logları ile kullanıcı aktivitelerinin izlenmesi.
 
 ## 1.1 Kullanılan Ortam
@@ -30,7 +28,7 @@ Yönetim Aracı: SQL Server Management Studio (SSMS)
 Projeye başlamadan önce sistemdeki mevcut login'ler sorgulanmıştır:
 
 ```sql
-sqlSELECT name, type_desc, is_disabled
+SELECT name, type_desc, is_disabled
 FROM sys.server_principals
 WHERE type IN ('S', 'U')
 ORDER BY name;
@@ -456,3 +454,13 @@ Sorgu sonucunda bağlantının 1433 portu üzerinden ve TCP protokolü kullanıl
 Bu sonuç, SQL Server’ın varsayılan portu olan 1433 üzerinden çalıştığını ve oluşturulan firewall kuralının doğru port üzerinde etkili olduğunu doğrulamaktadır. Böylece istemci ile sunucu arasındaki iletişimin güvenlik duvarı tarafından kontrol edilen port üzerinden gerçekleştiği kanıtlanmıştır.
 
 ![FIREWALL11](gorseller/gorsel32.png)
+
+``` sql
+
+BACKUP CERTIFICATE NorthwindTDECert
+TO FILE = 'C:\NorthwindBackups\NorthwindTDECert.cer'
+WITH PRIVATE KEY (
+    FILE = 'C:\NorthwindBackups\NorthwindTDECert.pvk',
+    ENCRYPTION BY PASSWORD = 'CertBackup123!'
+);
+``` sql

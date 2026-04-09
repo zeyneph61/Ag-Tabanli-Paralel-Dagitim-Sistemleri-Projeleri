@@ -12,7 +12,7 @@ Zeynep Hacısalihoğlu
 
 Bu proje Microsoft SQL Server 2022 üzerinde çalışan Northwind veritabanı üzerinde kapsamlı bir güvenlik altyapısının tasarlanması ve uygulanmasını konu almaktadır.
 
-Veritabanı güvenliği; yetkisiz erişimin engellenmesi, hassas verinin korunması ve kullanıcı aktivitelerinin izlenmesi açısından kritik önem taşımaktadır.
+
 
 Proje kapsamında dört temel güvenlik konusu ele alınmıştır: kullanıcı erişim yönetimi, veri şifreleme (TDE), SQL Injection saldırılarına karşı koruma ve audit logları ile kullanıcı aktivitelerinin izlenmesi.
 
