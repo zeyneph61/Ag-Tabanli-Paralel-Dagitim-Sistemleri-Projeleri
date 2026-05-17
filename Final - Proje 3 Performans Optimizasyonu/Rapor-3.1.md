@@ -1,6 +1,6 @@
 # 3. Performans Optimizasyonu
 
-Final 1. Proje
+Genel 3, Final 1. Proje
 
 Ağ Tabanlı Paralel Dağıtım Sistemleri dersi için yapılan Performans Optimizasyonu projesi.
 
