@@ -149,7 +149,7 @@ Sorgu sonucunda CustomerID'si "TEST" olan bir test kaydı tespit edilmiştir. Bu
 Analiz aşamasında tespit edilen hatalı ve eksik veriler aşağıdaki T-SQL komutları ile temizlenmiştir. Test kaydı silinmiş, NULL bölge ve posta kodu değerleri 'N/A' ile doldurulmuştur.
 
 ```sql
-sql-- Test kaydını sil
+-- Test kaydını sil
 DELETE FROM Customers WHERE CustomerID = 'TEST';
 
 -- NULL Region değerlerini 'N/A' ile doldur
@@ -178,7 +178,7 @@ WHERE ShipRegion IS NULL;
 Customers tablosundaki Country değerlerinin büyük/küçük harf tutarlılığı sağlanmış, ContactTitle kolonundaki fazla boşluklar temizlenmiştir. Ayrıca Products tablosundaki Discontinued kolonu doğrulanmıştır.
 
 ```sql
-sql-- Country değerlerini standartlaştır
+-- Country değerlerini standartlaştır
 UPDATE Customers
 SET Country = UPPER(LEFT(Country, 1)) + LOWER(SUBSTRING(Country, 2, LEN(Country)))
 WHERE Country IS NOT NULL;
@@ -205,7 +205,7 @@ Discontinued kolonunda tutarsız değer bulunmamıştır. Country ve ContactTitl
 Temizlenen ve dönüştürülen veriler yeni bir hedef tabloya yüklenmiştir. Hedef tablo, kaynak tabloya ek olarak ETL yükleme tarihini de kayıt altına alan ETL_LoadDate kolonunu içermektedir.
 
 ```sql
-sql-- Hedef tablo oluştur
+-- Hedef tablo oluştur
 CREATE TABLE Customers_Cleaned (
     CustomerID NCHAR(5) PRIMARY KEY,
     CompanyName NVARCHAR(40) NOT NULL,
@@ -232,7 +232,7 @@ WHERE Country IS NOT NULL;
 
 ![Sonuc3](gorseller/gorsel7.png)
 
-## 5.5. Veri Kalitesi Raporu
+## 5. Veri Kalitesi Raporu
 
 ## 5.1 ETL Sonrası Veri Kalitesi Analizi
 
