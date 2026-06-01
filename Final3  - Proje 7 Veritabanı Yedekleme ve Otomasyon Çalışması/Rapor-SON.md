@@ -1,6 +1,6 @@
 # Veritabanı Yedekleme ve Otomasyon Çalışması
 
-Genel 4, Final 2. Proje
+Final 3. Proje
 
 Ağ Tabanlı Paralel Dağıtım Sistemleri dersi için yapılan Veritabanı Yedekleme ve Otomasyon Çalışması projesi.
 

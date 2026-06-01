@@ -1,6 +1,6 @@
 # Veri Temizleme ve ETL Süreçleri Tasarımı
 
-Genel 4, Final 3. Proje
+Final 2. Proje
 
 Ağ Tabanlı Paralel Dağıtım Sistemleri dersi için yapılan Veri Temizleme ve ETL Süreçleri Tasarımı projesi.
 

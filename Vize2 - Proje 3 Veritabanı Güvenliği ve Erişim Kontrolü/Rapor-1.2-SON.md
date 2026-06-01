@@ -1,5 +1,7 @@
 # 3. Veri Tabanı Güvenliği ve Erişim Kontrolü
 
+Vize 2.Proje
+
 Ağ Tabanlı Paralel Dağıtım Sistemleri dersi için yapılan Veri Tabanı Güvenliği ve Erişim Kontrolü projesi.
 
 # BLM 4522 PROJE RAPORU

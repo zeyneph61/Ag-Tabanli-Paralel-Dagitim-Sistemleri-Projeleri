@@ -1,6 +1,6 @@
 # 3. Performans Optimizasyonu
 
-Genel 3, Final 1. Proje
+Final 1. Proje
 
 Ağ Tabanlı Paralel Dağıtım Sistemleri dersi için yapılan Performans Optimizasyonu projesi.
 
@@ -118,6 +118,16 @@ ORDER BY OrderCount DESC;
 ```
 
 Profiler ekranında her üç sorgunun SQL:BatchCompleted olayı altında yakalandığı görülmüş; CPU, Reads ve Duration değerleri başarıyla raporlanmıştır. 
+
+Yakalanan sorgulara ait performans metrikleri incelendiğinde:
+
+  ```sql
+  SELECT * FROM Orders JOIN Customers — CPU: 15, Reads: 223, Duration: 4
+  SELECT * FROM Products JOIN Order Details — CPU: 16, Reads: 502, Duration: 5
+  SELECT CustomerID, COUNT(*) FROM Orders — CPU: 0, Reads: 344, Duration: 2*
+  ```
+
+Bu değerler sorgular arasındaki kaynak tüketimi farklarını ortaya koymaktadır. En fazla okuma işlemi Products ve Order Details tablolarını birleştiren sorguda gerçekleşmiştir.
 
 ![Sorgu1](gorseller/gorsel9.png) ![Sorgu2](gorseller/gorsel10.png) ![Sorgu3](gorseller/gorsel11.png)
 

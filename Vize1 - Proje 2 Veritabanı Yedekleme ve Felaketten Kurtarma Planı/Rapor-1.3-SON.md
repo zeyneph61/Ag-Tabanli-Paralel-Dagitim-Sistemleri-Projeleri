@@ -44,7 +44,7 @@ Amaç: Bir felaket anında (sunucu çökmesi, yanlışlıkla silme, veri bozulma
 1. Full Backup  => Tüm DB'nin şuanki halini kaydetmek
 2. Differential Backup => Full'dan sonraki değişiklikleri yakalamak
 3. Transaction Log Backup => Saatlik/dakikalık değişiklikleri yakalamak
-4. Otomatik ZamanlamaBunları => SQL Agent ile otomatik çalışmasını sağlamak
+4. Otomatik Zamanlama => SQL Agent ile otomatik çalışmasını sağlamak
 5. Test aşaması => DB'yi silmek / veriyi bozmak
 6. Geri Yüklemeye çalışmak
 7. Point-in-Time Restore => Transaction Log kullanarak belirli bir ana geri dönmek
